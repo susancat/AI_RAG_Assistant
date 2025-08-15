@@ -9,6 +9,10 @@ A lightweight RAG (Retrieval-Augmented Generation) assistant that lets you ask q
 - Generate embeddings via `text-embedding-3-small`
 - Store embeddings in FAISS index
 - Search top-k similar chunks
+- Answer questions using `GPT-5-nano` and document context
+
+🔍 The system will **first search your uploaded document** using semantic similarity.  
+If no relevant content is found, it will fall back to a general GPT-5 response.
 
 ## 📦 Tech Stack
 
@@ -27,7 +31,7 @@ A lightweight RAG (Retrieval-Augmented Generation) assistant that lets you ask q
    - "List all key features."
 
 ## 🧠 Example
-Q: What does the company provide?  
+Q: What products does the NovaTech provide?  
 A: According to the document, they offer...  
 
 ## Lambda Deploymeng
